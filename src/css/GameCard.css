@@ -1,0 +1,54 @@
+.singleGame {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  color: #3a3a3a;
+  z-index: 0;
+}
+
+.gameInfo {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 10px;
+  z-index: 0;
+}
+
+.gameInfo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.gameInfo h3 {
+  margin-bottom: 20px;
+  color: #540067;
+}
+
+.gameInfoButton {
+  background-color: #8c4ab9;
+  border-radius: 10px;
+}
+
+.gameInfoButton button {
+  width: 100%;
+  background-color: #4593ce;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+  transition: 0.3s ease-in-out;
+  border-radius: 0 0 10px 10px;
+}
+
+
+.gameInfoButton button:hover {
+  background-color: #1367a7;
+}
+
+

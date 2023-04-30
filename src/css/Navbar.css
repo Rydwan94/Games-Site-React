@@ -1,0 +1,105 @@
+
+
+.navBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #540067;
+  padding: 20px;
+}
+
+.brand img {
+  width: 100px;
+}
+
+.navBar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navBar ul li {
+  padding: 0 40px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.navBar ul li a {
+  color: #F8F8F8;
+  text-decoration: none;
+  position: relative;
+  padding-right: 10px;
+}
+
+.navBar ul li a:before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 2px;
+  background-color:  #4593ce;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.navBar ul li a:hover:before {
+  opacity: 1;
+}
+
+.navBar li a.active {
+  color:  #4593ce;
+}
+
+.navIcon {
+  font-size: 20px; /* Rozmiar ikon */
+  margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+  .navBar {
+    display: flex;
+    justify-content: flex-end;
+    height: auto;
+    padding: 10px 0;
+  }
+  .navListItem {
+    max-height: 0;
+    padding: 0 !important;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+  }
+
+  .show {
+    max-height: 100vh;
+  }
+
+  .faBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navToggleIcon {
+    display: block;
+    font-size: 40px;
+    color: #dff6ff;
+    transition: 0.5s;
+  }
+
+  .navBar ul {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .navBar ul li {
+    padding: 5px 0;
+  }
+}
