@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Games-Site-React/static/css/main.a42643f2.css",
+    "main.js": "/Games-Site-React/static/js/main.e0818aa6.js",
+    "static/media/homePageImg.png": "/Games-Site-React/static/media/homePageImg.6b818d4fdabf831c04b3.png",
+    "static/media/backgroundImg.png": "/Games-Site-React/static/media/backgroundImg.b32cb59e51e0ae26393c.png",
+    "static/media/topGameImg.jpg": "/Games-Site-React/static/media/topGameImg.a5c6b0dd34a3a63767f3.jpg",
+    "index.html": "/Games-Site-React/index.html",
+    "main.a42643f2.css.map": "/Games-Site-React/static/css/main.a42643f2.css.map",
+    "main.e0818aa6.js.map": "/Games-Site-React/static/js/main.e0818aa6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a42643f2.css",
+    "static/js/main.e0818aa6.js"
+  ]
+}
