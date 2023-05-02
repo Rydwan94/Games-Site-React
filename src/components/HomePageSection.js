@@ -5,6 +5,7 @@ import "../css/HomePageSection.css";
 import homePageImg from "../img/homePageImg.png";
 
 const HomePageSection = () => {
+  
   const navigateToGames = useNavigate();
   const handleButton = () => {
     navigateToGames("/games");

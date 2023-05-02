@@ -120,6 +120,7 @@ const Provider = ({ children }) => {
       value={{
         games: filteredGames,
         searchValue,
+        setSearchValue,
         handleSearchButton,
         handleSearchInput,
       }}
