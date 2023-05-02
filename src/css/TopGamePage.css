@@ -65,6 +65,7 @@
     .topGameInfo {
     background: none;
     text-align: justify;
+    height: auto;
     width: 100%;
     max-width: none;
     }
