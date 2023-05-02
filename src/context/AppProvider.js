@@ -5,6 +5,12 @@ export const themeContext = createContext();
 const Provider = ({ children }) => {
   const [gameTypeValue, setGameTypeValue] = useState("");
   const [searchValue, setSearchValue] = useState("");
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    message: "",
+  });
 
   const [games, setGames] = useState([
     {
@@ -115,14 +121,28 @@ const Provider = ({ children }) => {
     setFilteredGames(searchedGame);
   };
 
+  const handleSubmit = e => {
+    e.preventDefault()
+    console.log("Form data submitted:", formData)
+    setFormData({firstName: '', lastName: '', email: '', message: ''})
+  }
+
+  const handleFormOnChange = e => {
+    const { name, value } = e.target;
+    setFormData((prevState) => ({ ...prevState, [name]: value }));
+  }
+
   return (
     <themeContext.Provider
       value={{
         games: filteredGames,
         searchValue,
+        formData,
         setSearchValue,
         handleSearchButton,
         handleSearchInput,
+        handleSubmit,
+        handleFormOnChange
       }}
     >
       {children}
